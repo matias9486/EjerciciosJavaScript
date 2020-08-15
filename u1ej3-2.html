@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        1-Un Algoritmo es una serie ordenada de instrucciones, pasos o procesos que llevan a la solución de un determinado problema. 
+        Los Algoritmos permiten describir claramente una serie de instrucciones que debe realizar el computador para lograr un resultado previsible.
+        Algunos ejemplos de algoritmo son los manuales de usuario, que muestran algoritmos para usar un aparato, o las instrucciones que recibe un trabajador por parte de su patrón.
+
+        Un algoritmo serian pasos, instrucciones para lograr determinada tarea.
+
+        2-El pseudocódigo es un «falso lenguaje» intermedio entre nuestro lenguaje natural y un lenguaje de programación. 
+        A través de él se pueden escribir los algoritmos con un lenguaje más próximo al nuestro.
+        Utiliza las convenciones estructurales de un lenguaje de programación real, pero está diseñado para la lectura humana en lugar de la lectura mediante máquina​, y con independencia de cualquier otro lenguaje de programación.
+
+        Ejemplo: Pedir dos números enteros y mostrar ‘Verdadero’ si el primero es mayor
+            1. ALGORITMO Decir;
+            2. VAR
+            3. ENTERO x, z;
+            4. INICIO
+            5. ESCRIBIR(«Ingresar dos números»);
+            6. LEER( x, z );
+            7. SI( x > z )
+            8. ESCRIBIR(«Verdadero»);
+            9. FIN SI
+            10. FIN
+
+        */
+
+        //Ejercicio 3a:
+        //Calcular superficie Rectangulo
+        var lado1=10
+        var lado2=20
+        var superficieRectangulo= lado1 *lado2
+        console.log("Superficie Rectangulo: "+ superficieRectangulo)
+
+        //Calcular superficie triangulo
+        var base=3
+        var altura=5        
+        var superficieTriangulo= (base *altura)/2
+        console.log("Superficie Triangulo: "+ superficieTriangulo)
+
+        //Calcular superficie triangulo
+        var radio=3    
+        const pi=3.14159    
+        var superficieCirculo= pi * radio *radio
+        console.log("Superficie circulo: "+ superficieCirculo)
+
+        //Ejercicio B
+        var num1=10
+        var num2=20
+        var num3=30
+                
+        console.log("\nProducto:" + (num1*num2*num3))
+        console.log("Suma:" + (num1+num2+num3))
+        console.log("Promedio:" + (num1+num2+num3)/3)
+        
+        //Ejercicio C
+        var objeto1 = 'zapatillas'
+        var valorobjeto1 = 500
+
+        var objeto2 = 'medias'
+        var valorobjeto2 = 100
+
+        var objeto3 = 'Remera Negra'
+        var valorobjeto3 = 300
+
+        var objeto4 = 'Remera Azul'
+        var valorobjeto4 = 300
+
+        var objeto5= 'Remera Blanca'
+        var valorobjeto5 = 300
+        
+        var total=valorobjeto1 + valorobjeto2 + valorobjeto3 + valorobjeto4 + valorobjeto5
+        var totaldescuentoventa=total*0.15
+        var totalfinal=total- totaldescuentoventa 
+        console.log("\nTotal: "+total+"\nDescuento: "+totaldescuentoventa+"\nMonto Final: "+ totalfinal)
+        
+        //Ejerciciio D
+        var pesos=100
+        var valorDolar=71.76
+        console.log("\n$"+pesos +" equivale a "+ (pesos*valorDolar) +" dolares")
+
+        //Ejercicio E
+        var importe=1000
+        var iva=0.21
+        console.log("\nTotal IVA: $"+ (importe*iva) )
+
+    </script>
+</body>
+</html>
